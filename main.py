@@ -41,8 +41,6 @@ def startserver():
 def stopserver():
     exe = values["exe"]
     proc = subprocess.Popen(f"taskkill /f /im {exe}", shell=True, stderr=subprocess.PIPE)
-    if proc.stderr:
-        sg.popup(f"Cannot find {exe}!", title="Error!")
 
 def autoup():
     exe = values["exe"]
