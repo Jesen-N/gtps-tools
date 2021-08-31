@@ -9,8 +9,10 @@
 </p>
 
 ## Note
-Simple GTPS Tools made in python using PYSimpleGUI
-Control your gtps with gtps-tools!
+- Please give credit to me!
+- Do not try to sell this app, because this app is 100% open source!
+- Do not try to reupload and rename the creator app!
+- Simple GTPS Tools made in python using PYSimpleGUI
 
 ## Screenshot
 <p align="left">
