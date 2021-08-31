@@ -1,4 +1,4 @@
-# coding=utf8
+# Made by Jesen N#9071
 import PySimpleGUI as sg
 import wget, subprocess, webbrowser
 
