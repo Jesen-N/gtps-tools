@@ -101,7 +101,8 @@ def xampp():
         print("\nDone!")
         sg.popup("Succesfully download xampp!")
         windowxampp.close()
-
+        ruleport()
+        
     elif eventx == "xamppno":
         windowxampp.close()
         ruleport()
