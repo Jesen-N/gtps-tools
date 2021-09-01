@@ -44,8 +44,7 @@ def stopserver():
 
 def autoup():
     exe = values["exe"]
-    exe1 = ".exe" in exe
-    if exe1:
+    if ".exe" in exe:
         try:
             f = open("autoup.bat")
             f.close()
