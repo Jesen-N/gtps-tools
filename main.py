@@ -10,8 +10,8 @@ def hostmaker():
     else:
         try:
             f = open(f"{namehost}", "w")
-            f.write(ip + " growtopia1.com\n")
-            f.write(ip + " growtopia2.com")
+            f.write(f"{ip} growtopia1.com\n")
+            f.write(f"{ip} growtopia2.com")
             f.close()
             sg.popup_no_titlebar("Your host has been created!", background_color='brown')
         except Exception as e:
@@ -22,16 +22,16 @@ def serverdata():
     port = values["port"]
     f = open("server_data.php", "w")
     f.write(f"""server|{ip}
-    port|{port}
-    type|1
-    #maint|Maintenance message
+port|{port}
+type|1
+#maint|Maintenance message
 
-    beta_server|{ip}
-    beta_port|{port}
+beta_server|{ip}
+beta_port|{port}
 
-    beta_type|1
-    meta|localhost
-    RTENDMARKERBS1001""")
+beta_type|1
+meta|localhost
+RTENDMARKERBS1001""")
     sg.popup_no_titlebar("Your server_data.php has been created!", background_color="brown")
 
 def startserver():
