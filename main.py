@@ -84,21 +84,20 @@ def dontshowui():
 def download(args):
     if args == "Discord Bot Status":
         print("Downloading Discord Bot Status...")
-        wget.download("https://bit.ly/38uuG6h")
+        wget.download("https://bit.ly/3zSZvxD")
         print("\nDone!")
         sg.popup("Succesfully downloaded!")
 
     elif args == "GTPS Controller Discord":
         print("Downloading GTPS Controller Discord...")
-        wget.download("https://bit.ly/2WDp4Eo")
+        wget.download("https://bit.ly/3jNFoLv")
         print("\nDone!")
         sg.popup("Succesfully downloaded!")
 
     elif args == "Visual Studio":
         print("Downloading Visual Studio...")
-        wget.download("https://bit.ly/3mMH7mf")
+        webbrowser.open("https://tinyurl.com/5nstjz7b")
         print("\nDone!")
-        sg.popup("Succesfully downloaded!")
 
 def xampp():
     layoutxampp = [[sg.Text("If you want setup please make sure run this app as administrator\n\nDo you want install xampp?")],
