@@ -1,6 +1,17 @@
 # Made by Jesen N#9071
+import pkg_resources, sys, subprocess
+
+required = {'pysimplegui', 'wget'}
+installed = {pkg.key for pkg in pkg_resources.working_set}
+missing = required - installed
+
+if missing:
+    python = sys.executable
+    subprocess.check_call([python, '-m', 'pip', 'install', *missing], stdout=subprocess.DEVNULL)
+    print("installing module...")
+    
 import PySimpleGUI as sg
-import wget, subprocess, webbrowser
+import wget, webbrowser
 
 def hostmaker():
     ip = values["ip"]
