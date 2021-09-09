@@ -106,9 +106,8 @@ def xampp():
     eventx, valuesx = windowxampp.read()
     if eventx == "xamppwin":
         print("Downloading Xampp Windows...")
-        wget.download("https://bit.ly/3mNbg4M")
+        webbrowser.open("https://tinyurl.com/zjnejee9")
         print("\nDone!")
-        sg.popup("Succesfully download xampp!")
         windowxampp.close()
         ruleport()
         
